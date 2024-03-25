@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiverr Homepage Clone | CodingNepal</title>
+  <link rel="stylesheet" href="settings.css">
+  <!-- Google Icons Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Fiverr Logo">
+      </a>
+      <h1 class = "tt">Thrills & Chills</h1>
+      <ul class="menu-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#author">Libraries</a></li>
+        <li><a href="#table">Bookmarks</a></li>
+        <li><a href="#book">The story</a></li>
+        <li class="join-btn"><a onclick="toggleDarkMode()">Dark mode</a></li>   
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+         
+          <p class="description">
+            Dark Mode <br> 
+            Share <br> 
+            Rate us <br>
+            FeedBack <br> 
+            Privacy Policy<br> 
+
+          </p>    
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-menu">
+  <a href="#" class="bottom-menu-item">
+      <img src ="images/icons8-user-20.png">
+      <span>Profile</span>
+  </a>
+  <a href="index.html" class="bottom-menu-item">
+    <img src ="images/icons8-home-20.png">
+    <span>Home</span>
+</a>
+<a href="#" class="bottom-menu-item">
+    <img src ="images/icons8-settings-20 (1).png">
+  <span>Settings</span>
+</a>
+</div>
+
+  
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>
